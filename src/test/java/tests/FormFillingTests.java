@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 
-public class FormFilling {
+public class FormFillingTests {
     @BeforeAll
     static void setup() {
         Configuration.startMaximized = true;
@@ -36,7 +36,7 @@ public class FormFilling {
         $("[class=react-datepicker__month-select]").selectOption(0);
         $("[class=react-datepicker__year-select]").click();
         $("[class=react-datepicker__year-select]").selectOption("2020");
-        $(byText("17")).click();;
+        $(byText("17")).click();
 
 //        выбор темы
         $("[id=subjectsContainer]").click();
@@ -48,9 +48,10 @@ public class FormFilling {
         $("[id=uploadPicture]").sendKeys(picture);
 //        Ввод адреса
         $("[id=currentAddress]").setValue("Moscow");
-//        ввод штата и города
+//        выбор штата
         $("[id=react-select-3-input]").sendKeys("NCR");
         $("[id=react-select-3-input]").pressEnter();
+//        выбор города
         $("[id=react-select-4-input]").sendKeys("Noida");
         $("[id=react-select-4-input]").pressEnter();
         $("[id=submit]").click();
