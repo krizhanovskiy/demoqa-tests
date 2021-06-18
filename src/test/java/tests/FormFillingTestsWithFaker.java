@@ -27,6 +27,7 @@ public class FormFillingTestsWithFaker {
 
     StudentRegistrationForm studentRegistrationForm = new StudentRegistrationForm();
 
+//  тест проверки заполнения формы
     @Test
     void successfulSubmitStudentRegistrationFormTest() {
 //        открытие браузера
