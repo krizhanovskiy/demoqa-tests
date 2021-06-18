@@ -16,6 +16,7 @@ public class FormFillingTests {
         Configuration.startMaximized = true;
     }
 
+//  тест проверки заполнения формы
     @Test
     void successfulSubmitStudentRegistrationFormTest() {
 //        открытие браузера
